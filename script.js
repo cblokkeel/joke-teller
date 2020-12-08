@@ -24,7 +24,7 @@ const tellTheJoke = (text) => {
 
 const provideJoke = async () => {
     try {
-        let apiUrl = darkMode.checked ? 'https://sleepy-fjord-31986.herokuapp.com/https://www.blagues-api.fr/api/type/dark/random' : 'https://sleepy-fjord-31986.herokuapp.com/https://www.blagues-api.fr/api/random?disallow=dark&disallow=limit'
+        const apiUrl = 'https://sleepy-fjord-31986.herokuapp.com/https://www.blagues-api.fr/api/random?disallow=dark&disallow=limit'
         const response = await fetch(apiUrl, {
             headers: {
                 'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjY4NTIzMjg2NjIzMTU4MjcyIiwibGltaXQiOjEwMCwia2V5IjoibWtqeEhJZU9KMDB4dHRBd0JwS09YWWxncmVtMXZ5MWVQRTN3dkhMdVc2YllOMDVoQ28iLCJjcmVhdGVkX2F0IjoiMjAyMC0xMi0wOFQwOToxNzoyMCswMTowMCIsImlhdCI6MTYwNzQxNTQ0MH0.XyZZtPApflK_t0zYXrVnYpvEu3edwyc-pe-Flqn_WKc`
