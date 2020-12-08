@@ -1,5 +1,5 @@
 # joke-teller
 
-tell some random jokes (dark mode available) :saprkles:
+tell some random jokes :saprkles:
 
 [view live](https://cblokkeel.github.io/joke-teller)
